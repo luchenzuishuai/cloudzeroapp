@@ -1,19 +1,25 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import About from '../views/About.vue'
+import People from '../views/People.vue'
+import Pic from '../views/Pic.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'About',
-    component: About
+    name: 'Pic',
+    component: Pic
   },
   {
-    path: '/home',
-    name: 'home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+    path: '/people',
+    name: 'people',
+    component: People
+  },
+  {
+    path: '/picinfo',
+    name: 'picinfo',
+    component: () => import(/* webpackChunkName: "home" */ '../views/PicInfo.vue')
   }
 ]
 
