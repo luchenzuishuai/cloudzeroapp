@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Name: Chen Lu, ID:91906</h1>
   <img src="https://firtstsamp.blob.core.windows.net/firstsampcontainer/moe.jpg" alt="">
   </div>
 </template>
@@ -18,5 +17,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+img {
+  margin-top: 15px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 </style>
